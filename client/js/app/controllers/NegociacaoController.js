@@ -11,18 +11,15 @@ class NegociacaoController {
         // this._listaNegociacoes = new ListaNegociacoes( model =>
         //     this._negociacaoView.update(model));
 
-        this._negociacaoView = new NegociacaoView($('#negociacaoView'));
-
         this._listaNegociacoes = new Bind(
             new ListaNegociacoes(),
-            this._negociacaoView,
-            ['adiciona', 'esvazia']);
+            new NegociacaoView($('#negociacaoView')),
+            'adiciona', 'esvazia');
 
-        this._mensagemView = new MensagemView($('#mensagemView'));
         this._mensagem = new Bind(
             new Mensagem(),
-            this._mensagemView,
-            ['texto']);
+            new MensagemView($('#mensagemView')),
+            'texto');
     }
 
     adiciona(event) {
