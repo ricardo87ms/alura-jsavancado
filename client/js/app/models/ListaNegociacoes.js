@@ -9,6 +9,16 @@ class ListaNegociacoes {
         this._negociacoes.push(negociacao);
     }
 
+    inverteOrdem() {
+
+        this._negociacoes.reverse();
+    }
+
+    ordena(criterio) {
+
+        this._negociacoes.sort(criterio);
+    }
+
     get negociacoes() {
 
         return [].concat(this._negociacoes);
