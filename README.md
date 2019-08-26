@@ -61,6 +61,14 @@ Este projeto está sendo desenvolvido utilizando o Visual Studio Code.
 
 ```
 
+npm init
+
+npm install babel-cli@6.10.1 --save-dev
+
+npm install babel-preset-es2015@6.9.0 --save-dev
+
+./node_modules/babel-cli/bin/babel.js js/app-es6 -d js/app
+
 ```
 
 ## Contribuição
