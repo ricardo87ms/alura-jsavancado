@@ -69,6 +69,10 @@ npm install babel-preset-es2015@6.9.0 --save-dev
 
 ./node_modules/babel-cli/bin/babel.js js/app-es6 -d js/app
 
+npm install systemjs@0.19.31 --save
+
+npm install babel-plugin-transform-es2015-modules-systemjs@6.9.0 --save-dev
+
 ```
 
 ## Contribuição
